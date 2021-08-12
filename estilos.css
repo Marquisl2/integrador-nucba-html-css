@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar */
+
+.navbar{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.container-logo{
+    width: 20%;
+    margin-left: 5%;
+}
+
+.logo-nav{
+    width: 40%;
+}
+
+.logo-nav:hover{
+    cursor: pointer;
+}
+
+.menu-nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.item-nav{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.item-nav a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.item-nav a:hover{
+    color: #692cd4;
+}
+
+.register-hud-nav{
+    width: 20%;
+    display: flex;
+    list-style: none;
+}
+
+.item-register-nav{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    padding: 3%;
+    font-weight: bolder;
+}
+
+.item-register-nav a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.item-register-nav:hover{
+    cursor: pointer;
+}
+
+.register{
+    border-radius: 5px 0px 0px 5px;
+    background-color: #692cd4;
+    color: black;
+}
+
+.register:hover{
+    background-color: #692cd4;
+    color: white;
+    border: 1px solid white;
+}
+
+.login{
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    color: black;
+}
+
+.login:hover{
+    background-color: white;
+    color: #692cd4;
+    border: 1px solid #692cd4;
+}
+
+/* Portada */
+
+.container-portada{
+    width: 100%;
+}
+
+.img-portada{
+    width: 100%;
+}
+
+/* Jugadores */
+
+.section-jugadores{
+    width: 100%;
+    background-color: #24262C;
+}
+
+.container-titulo-jugadores{
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-jugadores{
+    color: #692cd4;
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+
+.container-jugadores{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-cards{
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card-jugadores{
+    width: 100%;
+    border: 3px solid white ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+    background-color: #692cd4;
+}
+
+.img-jugador-card{
+    width: 40%;
+    padding: 5%;
+}
+
+.zakk{
+    width: 53.2%;
+}
+
+.container-info{
+    width: 60%;
+}
+
+.item-card{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.card-jugadores:hover { background: white; border:3px solid #692cd4; color: #692cd4;}
+
+.card-jugadores:hover .item-card { color: #692cd4;}
+
+/* Contacto */
+
+.section-contacto{
+    width: 100%;
+    background-color: #24262C;
+}
+
+.container-titulo-contacto{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.titulo-contacto{
+    color: white;
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+
+.container-form-contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.form-contacto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-form{
+    border: 2px solid #692cd4 ;
+    width: 100%;
+    height: 50px;
+    background-color: inherit;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.item-form::placeholder{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.item-form:focus{
+    outline: none;
+}
+
+.name{
+    margin-bottom: 4%;
+}
+
+.email{
+    margin-bottom: 4%;
+}
+
+.textarea{
+    margin-bottom: 4%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 300px;
+    min-height: 300px;
+    max-height: 400px;
+}
+
+.btn-form{
+    border: 2px solid #692cd4 ;
+    width: 50%;
+    height: 50px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10%;
+}
+
+.btn-form:hover{
+    cursor: pointer;
+}
+
+/* Footer */
+
+.container-footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-socials{
+    width: 15%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.p-footer-socials{
+    color: #692cd4;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.links-footer-socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-socials {
+    color: #692cd4;
+    font-size: 2em;
+}
+
+.link-socials:hover{
+    color: white;
+}
+
+.footer-top{
+    border-radius: 100%;
+    border: 2px solid white;
+    width: 5%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top:hover{
+    cursor: pointer;
+}
+
+.footer-top-arrow{
+    color: white;
+    font-size: 2em;
+}
+
+.footer-logo{
+    width: 15%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-logo-footer{
+    width: 80px;
+}
+
+.p-logo-footer{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+
