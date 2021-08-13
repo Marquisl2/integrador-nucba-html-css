@@ -10,6 +10,88 @@ body{
     height: 100%;
 }
 
+/* navbar hamburguesa */
+
+.menu-nav-hamburguesa{
+    display: none;
+  }
+  
+  .check-hamburguesa:checked  ~ .menu-nav-hamburguesa{
+    display:block;
+  }
+  
+  .check-hamburguesa {
+    display: none;
+  }
+  
+  .label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  .label:hover{
+    cursor: pointer;
+    background-color: #692cd4;
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  .check-hamburguesa:checked ~ .label {
+    background-color: #692cd4;
+  }
+
+  .check-hamburguesa:checked ~ .label:hover{
+      background-color: black;
+  }
+  
+  .menu-nav-hamburguesa{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+  }
+  
+  
+  .item-nav-hamburguesa {
+    display: block;
+    background: white;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1em;
+  }
+
+  .item-nav-hamburguesa:hover{
+      color: #692cd4;
+  }
+  
+  .item-nav-hamburguesa a{
+      text-decoration: none;
+      color: inherit;
+  }
+
+  .navbar-hamburguesa{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    display: none;
+  }
+
 /* Navbar */
 
 .navbar{
@@ -239,9 +321,9 @@ body{
     font-weight: 600;
 }
 
-.card-jugadores:hover { background: white; border:3px solid #692cd4; color: #692cd4;}
+.card-jugadores:hover { cursor: pointer; background: white; border:3px solid #692cd4; color: #692cd4;}
 
-.card-jugadores:hover .item-card { color: #692cd4;}
+.card-jugadores:hover .item-card {color: #692cd4;}
 
 /* Contacto */
 
@@ -335,6 +417,8 @@ body{
 
 .btn-form:hover{
     cursor: pointer;
+    background-color: white;
+    color: #692cd4;
 }
 
 /* Footer */
@@ -418,6 +502,350 @@ body{
     color: white;
     font-family: sans-serif;
     font-size: 1em;
+}
+
+/* Register y Login */
+
+.body-register{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/9z-fondo-new.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container-register{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form{
+    width: 30%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.titulo-register{
+    font-family: sans-serif;
+    font-size: 2em;
+    color: white;
+    margin-top: 5%;
+}
+
+.socials-register{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.links-register{
+    color: white;
+    font-size: 2em;
+}
+
+.links-register:hover{
+    cursor: pointer;
+}
+
+.google:hover{
+    color: #F5341E;
+}
+
+.twitter:hover{
+    color: #239CF5;
+}
+
+.facebook:hover{
+    color: #1A79F6;
+}
+
+.p-register{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.input-register{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 5%;
+    color: #692cd4;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+    border: none;
+}
+
+.input-register:focus{
+    outline: none;
+}
+
+.input-register::placeholder{
+    color: #692cd4;
+}
+
+.btn-register{
+    width: 50%;
+    height: 35px;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    background-color: #692cd4;
+    border: none;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.btn-register:hover{
+    cursor: pointer;
+    color: #692cd4;
+    background-color: white;
+    border: 1px solid #692cd4;
+}
+
+.p-register-login{
+    margin-bottom: 5%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.p-register-login a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.p-register-login a:hover{
+    color: #692cd4;
+}
+
+/* media queries */
+
+@media (max-width: 769px){
+    
+    .navbar{
+        display: none;
+    }
+
+    .navbar-hamburguesa{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+
+    }
+
+    .titulo-historia{
+        font-size: 2.3em;
+    }
+
+    .subtitulo-historia{
+        font-size: 1.3em;
+    }
+
+    .info-historia{
+        font-size: .75em;
+        margin-bottom: 3%;
+    }
+
+    .titulo-jugadores{
+        font-size: 2.3em;
+    }
+
+    .container-jugadores{
+        flex-direction: column
+    }
+    
+    .container-cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-jugadores{
+        width: 45%;
+    }
+
+    .item-card{
+        font-size: 1em;
+    }
+
+    .titulo-contacto{
+        font-size: 2.3em;
+    }
+    .textarea{
+        min-height: 150px;
+        height: 150px;
+
+    }
+
+    .footer-socials{
+        width: 25%;
+    }
+
+    .footer-top{
+        width: 70px;
+    }
+
+    .footer-logo{
+        width: 25%;
+    }
+
+    .img-logo-footer{
+        width: 70px;
+    }
+
+    .p-logo-footer{
+        font-size: .7em;
+    }
+
+    /* login */
+
+    .register-form{
+        width: 70%;
+        height: auto;
+    }
+
+    .registro{
+        height: auto;
+    }
+    
+
+}
+
+@media (max-width: 540px){
+    .titulo-historia{
+        font-size: 2em;
+    }
+
+    .container-img-historia{
+        width: 60%;
+    }
+
+    .container-info-hisoria{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .subtitulo-historia{
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .info-historia{
+        font-size: .75em;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .titulo-jugadores{
+        font-size: 2em;
+    }
+
+    .container-jugadores{
+        flex-direction: column
+    }
+    
+    .container-cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-jugadores{
+        width: 45%;
+    }
+
+    .item-card{
+        font-size: .7em;
+    }
+
+    .titulo-contacto{
+        font-size: 2em;
+    }
+
+    .item-form{
+        width: 300px;
+    }
+
+    .textarea{
+        min-height: 150px;
+        height: 150px;
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .btn-form{
+        width: 150px;
+        font-size: .9em;
+    }
+
+    .container-footer{
+        height: 150px;
+    }
+
+    .footer-socials{
+        width: 25%;
+    }
+
+    .p-footer-socials{
+        font-size: 1.3em;
+    }
+
+    .link-socials{
+        font-size: 1.5em;
+    }
+
+    .footer-top{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-top-arrow{
+        font-size: 1.5em;
+    }
+
+    .footer-logo{
+        width: 25%;
+    }
+
+    .img-logo-footer{
+        width: 55px;
+    }
+
+    .p-logo-footer{
+        font-size: .4em;
+    }
+
+    /* login */
+
+    .register-form{
+        width: 90%;
+        height: auto;
+    }
+
+    .registro{
+        height: auto;
+    }
+
 }
 
 
