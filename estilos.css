@@ -224,7 +224,8 @@ body{
 
 .zakk{
     width: 53.2%;
-}
+    margin-left: -8%;
+}   
 
 .container-info{
     width: 60%;
